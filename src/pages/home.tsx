@@ -7,9 +7,10 @@ const HomePage = () => {
   const navigate = useNavigate();
   const { Header, Content } = Layout;
   return (
-    <>
+    <div>
       <Header
         style={{
+          marginBottom: "30px",
           gap: "100px",
           display: "flex",
           justifyContent: "center",
@@ -26,7 +27,7 @@ const HomePage = () => {
       </Header>
 
       <Outlet />
-    </>
+    </div>
   );
 };
 

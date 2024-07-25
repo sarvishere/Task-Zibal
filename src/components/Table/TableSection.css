@@ -1,0 +1,17 @@
+
+    
+    .table-row:nth-child(odd) {
+    background-color: #f0f0f0; /* Gray */
+    }
+    
+    .table-row:nth-child(even) {
+    background-color: #ffffff; 
+    }
+    
+    .search-icon {
+    background-color: #1890ff; /* Primary color */
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    }
+    

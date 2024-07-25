@@ -1,8 +1,8 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/mainLayout";
 import HomePage from "../pages/home";
-import Table from "../components/table";
 import Form from "../components/form";
+import TableSection from "../components/Table/table";
 
 const router = createBrowserRouter([
   {
@@ -14,7 +14,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Table />,
+            element: <TableSection />,
           },
           {
             path: "form",
