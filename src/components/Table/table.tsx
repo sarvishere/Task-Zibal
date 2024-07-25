@@ -9,6 +9,11 @@ const toFarsiNumber = (num: number | string): string => {
   return num.toString().replace(/\d/g, (x) => farsiDigits[parseInt(x)]);
 };
 
+const formatAmount = (amount: string): string => {
+  const number = parseInt(amount, 10);
+  return ` ${toFarsiNumber(number.toLocaleString("fa-IR"))} ریال`;
+};
+
 const TableSection: React.FC = () => {
   const [data, setData] = useState<MockData[]>(mockData);
 
@@ -110,7 +115,7 @@ const TableSection: React.FC = () => {
     {
       title: "مبلغ ",
       dataIndex: "amount",
-      render: (text: string) => toFarsiNumber(text),
+      render: (text: string) => formatAmount(text),
     },
     {
       title: "شماره کارت",
@@ -125,7 +130,6 @@ const TableSection: React.FC = () => {
         columns={columns}
         dataSource={data}
         rowKey="trackId"
-        style={{ display: "flex", flex: 1, margin: 10 }}
         pagination={false}
         footer={() => `تعداد نتایج  : ${toFarsiNumber(data.length)}`}
         rowClassName={(record, index) =>
