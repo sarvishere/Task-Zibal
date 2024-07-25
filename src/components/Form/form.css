@@ -1,24 +1,51 @@
 
+.custom-modal-header,
+.custom-modal-footer,
+.radio,
+.ant-select-item-option-content,
+.ant-form-item-required,
+label,
+#amount,
+span.ant-btn-primary
+h2,
+input,
+.ant-btn-default,
+textarea {
+  font-family: 'BYekan', sans-serif;
+}
+
 .custom-modal .ant-modal-content {
     direction: rtl;
-    }
+}
     
-    .custom-modal-header {
+.custom-modal-header {
     display: flex;
     gap: 10px;
     align-items: center;
     border-bottom: 1px solid #e8e8e8;
     padding: 16px 0;
-    }
+}
 
-    .custom-modal-footer {
+.custom-modal-footer {
     display: flex;
     justify-content: flex-end;
     border-top: 1px solid #e8e8e8;
-    padding: 10px 24px;
-    }
-    
-    .custom-modal-footer .ant-btn {
+    padding: -1px 24px;
+    padding-top: 10px;
+}
+
+.custom-modal-footer .ant-btn {
     margin-left: 8px;
-    }
+}
+
+.ant-radio-button-checked {
+    background-color: rgb(22, 119, 255);
+    color: white;
+}
+
+.ant-radio-button-checked + span{
+    background-color: rgb(22, 119, 255);
+    color: white;
+}
+
     
