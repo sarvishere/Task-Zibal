@@ -1,8 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layout/mainLayout";
 import HomePage from "../pages/home";
-import Form from "../components/form";
+
 import TableSection from "../components/Table/table";
+import CreateForm from "../components/Form/form";
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
           },
           {
             path: "form",
-            element: <Form />,
+            element: <CreateForm />,
           },
         ],
       },

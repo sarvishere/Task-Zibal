@@ -1,0 +1,24 @@
+
+.custom-modal .ant-modal-content {
+    direction: rtl;
+    }
+    
+    .custom-modal-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 16px 0;
+    }
+
+    .custom-modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #e8e8e8;
+    padding: 10px 24px;
+    }
+    
+    .custom-modal-footer .ant-btn {
+    margin-left: 8px;
+    }
+    

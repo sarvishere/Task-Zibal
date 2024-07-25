@@ -1,11 +1,10 @@
-import React from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import Button from "antd/lib/button";
 import { Layout } from "antd";
 
 const HomePage = () => {
   const navigate = useNavigate();
-  const { Header, Content } = Layout;
+  const { Header } = Layout;
   return (
     <div>
       <Header
